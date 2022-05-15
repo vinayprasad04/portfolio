@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="300" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Home - Vinay Prasad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="./assets/css/theme/color-1.css"  class="colorThemeFile" title="color-1"/>
+    <link rel="stylesheet" href="./assets/css/theme/color-2.css"  class="colorThemeFile" title="color-2" disabled/>
+    <link rel="stylesheet" href="./assets/css/theme/color-3.css"  class="colorThemeFile" title="color-3" disabled/>
+    <link rel="stylesheet" href="./assets/css/theme/color-4.css"  class="colorThemeFile" title="color-4" disabled/>
+    <link rel="stylesheet" href="./assets/css/theme/color-5.css"  class="colorThemeFile" title="color-5" disabled/>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <button class="menuMobile" onclick="onClickMenu(this)"><i class="fa-solid fa-bars"></i><i class="fa-solid fa-xmark"></i></button>
+    <div class="overlay" onclick="removePopup(this)"></div>
+    <header>
+        <div class="sparkle">
+            <div class="item one"></div>
+            <div class="item two"></div>
+            <div class="item three"></div>
+            <div class="item four"></div>
+        </div>
+        <div class="logo"><img src="./assets/img/logo.svg" alt="logo"></div>
+        <nav>
+            <ul>
+                <li class="active"><a href="/new%20Website/index.html"> <i class="fa fa-home"></i>Home</a></li>
+                <li ><a href="/new%20Website/about.html"> <i class="fa fa-user"></i>About</a></li>
+                <li><a href="/new%20Website/services.html"> <i class="fa fa-bars"></i>Services</a></li>
+                <li><a href="/new%20Website/portfolio.html"> <i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="/new%20Website/contact.html"> <i class="fa fa-contact-card"></i>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="homePage">
+        <section class="intro">
+            <div class="leftSide">
+                <h1>Hello, my name is <em>Vinay Prasad</em></h1>
+                <h2><span>I'm a </span><em>Web Developer</em></h2>
+                <p>I'm a web Developer with extensive experience for over 7 years. My expertise is to make website with help of
+                    HTML, CSS, React.Js & Javascript...
+                </p>
+                <button class="btn btn-default" onclick="location.href='/new%20Website/about.html'">More About Us</button>
+                <a href="./assets/img/Vinay CV.pdf" style="margin-left: 10px" class="btn btn-default" download="vinay_cv.pdf">Download CV</a>
+            </div>
+            <div class="rightSide">
+                <div class="imgWrap">
+                    <div class="lShape"></div>
+                    <div class="lShape second"></div>
+                    <img src="./assets/img/photo.png" alt="photo"/>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="setting">
+        <div class="theme icons" onclick="onSettingClick(this)"><i class="fa fa-cog"></i></div>
+        <div class="dayNightMode icons" onclick="onDayNightModeClick()"><i class="fa fa-moon"></i><i class="fa-solid fa-sun"></i></div>
+        <div class="themePopup">
+            <h3>Theme Colors</h3>
+            <div class="color">
+                <span class="color-1" onclick="setColorTheme('color-1')"></span>
+                <span class="color-2" onclick="setColorTheme('color-2')"></span>
+                <span class="color-3" onclick="setColorTheme('color-3')"></span>
+                <span class="color-4" onclick="setColorTheme('color-4')"></span>
+                <span class="color-5" onclick="setColorTheme('color-5')"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+<script>
+    /*    function double(arr) {
+            let output = [];
+            for(let i = 0; i<arr.length; i++){
+                output.push(arr[i]*2);
+            }
+            console.log(output)
+            return output;
+        }
+        double([1,2,3,4]);*/
+
+    /*    function double(arr) {
+            let output = [...arr];
+            for(let i = 0; i<arr.length; i++){
+                output.push(arr[i]);
+            }
+            console.log(output)
+            return output;
+        }
+        double([1,2,3,4]);
+        */
+
+    /*Lonely Integer*/
+    /*function lonely(arr) {
+        let output = [];
+        for(let i = 0; i<arr.length;i++){
+            if(output.length>0){
+               for(let j =0; j<output.length;j++){
+                    if(output[i]===arr[i]){
+                        output.pop();
+                    }
+               }
+            }else {
+               output.push(arr[i])
+            }
+        }
+        console.log(output);
+        return output;
+    }
+    lonely([1,2,3,4,3,2,1])*/
+
+    /*function multiple(arr){
+        let output = null;
+        for(let i=0;i<arr.length;i++){
+
+        }
+    }*/
+
+    /*
+    function filter(arr) {
+        let output = arr.filter((item) => {
+            return item*2
+        })
+        console.log("dsfsdf", output);
+        return output;
+    }
+        filter([1,10,12,4,3,2,5,5,3,11,14]);
+    */
+
+
+    /*    const users = [
+            {firstName:"Vinay", lastName:"Prasad", age:26},
+            {firstName:"Abhishek", lastName:"Prasad", age:31},
+            {firstName:"Lucy", lastName:"Prasad", age:26},
+            {firstName:"Ram Naresh", lastName:"Prasad", age:67},
+            {firstName:"Monika", lastName:"Devi", age:48},
+            {firstName:"Mayank", lastName:"Devi", age:4},
+            {firstName:"Arpita", lastName:"Devi", age:6},
+        ]
+
+    function reducer(users) {
+        let output = users.reduce((acc, curr)=>{
+            if(acc[curr.age]){
+                acc[curr.age] = ++acc[curr.age]
+            }else {
+                acc[curr.age]=1
+            }
+            return acc
+        }, {})
+        console.log("sdsadsadsadsadsadasdsadasd", output);
+        return output
+    }
+    reducer(users);
+
+        function fullName(users) {
+            let output = users.map((item)=>{
+                return item.firstName +" "+ item.lastName;
+            })
+            console.log(output);
+            return output
+        }
+        console.log("fullName", fullName(users));
+
+        function ageGroup(users){
+            let output = users.reduce((acc, curr)=>{
+                    if(acc[curr.age]){
+                        acc[curr.age] = ++acc[curr.age]
+                    }else {
+                        acc[curr.age] = 1
+                    }
+                    return acc;
+            },{})
+            console.log(output);
+            return output
+        }
+        ageGroup(users);
+
+        function filterAge(users) {
+            let output = users.filter((item)=>{
+               return item.age<30
+            })
+            let firstName = output.map((item)=>{
+                return item.firstName
+            })
+            console.log("firstName", firstName);
+            return firstName;
+        }
+        filterAge(users);*/
+
+    /*    function lonelyInt(arr) {
+            let output = arr.filter((value)=>{
+                //console.log("arr.indexOf(value)", arr.indexOf(value));
+                console.log("arr.lastindex(value)", arr.lastIndexOf(value));
+                return arr.indexOf(value) === arr.lastIndexOf(value)
+            })
+            console.log(output);
+        }
+
+    lonelyInt([1,2,3,4,3,2,1]);*/
+
+
+    function plusMinus(arr) {
+        let positive = 0,
+            negative = 0,
+            zero = 0;
+        for(let i=0;i<arr.length; i++){
+            if(arr[i]===0){
+                ++zero
+            }else if(arr[i]>0){
+                ++positive
+            }else {
+                ++negative
+            }
+        }
+        positive = positive/arr.length;
+        negative = negative/arr.length;
+        zero = zero/arr.length;
+
+        console.log("positive",positive.toFixed(6),negative.toFixed(6),zero.toFixed(6))
+        return positive
+    }
+    plusMinus([-4, 3, -9, 0, 4, 1]);
+
+</script>
+</body>
+</html>

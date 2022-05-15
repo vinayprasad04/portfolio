@@ -1,0 +1,160 @@
+/*convert px to rem */
+.btn {
+  padding: 12px 30px;
+  border-radius: 20px;
+  background: #ff4038;
+  border: transparent;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-default {
+  background: #ff4038;
+  border: transparent;
+  color: #fff;
+  transition: 500ms;
+}
+.btn-default:hover {
+  background: #1e2c37;
+  transition: 500ms;
+}
+
+.sparkle .item {
+  height: 10px;
+  width: 10px;
+  position: fixed;
+  background: yellow;
+  border-radius: 50%;
+  animation: zoom 1s ease infinite;
+  z-index: 999;
+  opacity: 0.5;
+}
+.sparkle .item.one {
+  top: 100px;
+  left: 50px;
+}
+.sparkle .item.two {
+  top: 618px;
+  left: 249px;
+  animation-delay: 2s;
+  height: 5px;
+  width: 5px;
+}
+.sparkle .item.three {
+  top: 400px;
+  left: 40px;
+  animation-delay: 1s;
+  height: 7px;
+  width: 7px;
+}
+.sparkle .item.four {
+  top: 60px;
+  left: 237px;
+  animation-delay: 1.5s;
+  height: 5px;
+  width: 5px;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ff4038;
+  }
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1, 1);
+    background: yellow;
+  }
+  50% {
+    transform: scale(2.5, 2.5);
+    background: red;
+  }
+  100% {
+    transform: scale(1, 1);
+    background: yellow;
+  }
+}
+@keyframes hoverPop {
+  0%, 100% {
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(1.05);
+  }
+  66% {
+    transform: scale(0.9);
+  }
+}
+@keyframes slick-hover {
+  0.00% {
+    transform: translateY(20px) translateX(20px);
+  }
+  16.67% {
+    transform: translateY(-13px) translateX(-9px);
+  }
+  33.33% {
+    transform: translateY(4px) translateX(12px);
+  }
+  50.00% {
+    transform: translateY(20px) translateX(-20px);
+  }
+  66.67% {
+    transform: translateY(-3px) translateX(8px);
+  }
+  83.33% {
+    transform: translateY(-15px) translateX(-11px);
+  }
+  100.00% {
+    transform: translateY(20px) translateX(20px);
+  }
+}
+@keyframes slick-hover-2 {
+  0.00% {
+    transform: translateY(-20px) translateX(-20px);
+  }
+  16.67% {
+    transform: translateY(3px) translateX(-5px);
+  }
+  33.33% {
+    transform: translateY(18px) translateX(-10px);
+  }
+  50.00% {
+    transform: translateY(-20px) translateX(20px);
+  }
+  66.67% {
+    transform: translateY(15px) translateX(-4px);
+  }
+  83.33% {
+    transform: translateY(-1px) translateX(15px);
+  }
+  100.00% {
+    transform: translateY(-20px) translateX(-20px);
+  }
+}
+@keyframes circle-grow {
+  to {
+    clip-path: circle(100%);
+  }
+}
+@keyframes heading-in {
+  to {
+    clip-path: inset(0% 0%);
+  }
+}
+
+/*# sourceMappingURL=extra.css.map */
