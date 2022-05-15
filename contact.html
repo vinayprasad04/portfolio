@@ -93,7 +93,7 @@
            <div class="contactForm">
                <h2>Send Me An Email</h2>
                <h4>I'm very responsive to message</h4>
-               <form  id="contactForm" class="form" action="./contact.js" method="post" >
+               <form  id="contactForm" class="form" action="https://formspree.io/f/xwkyarry" method="post" >
                    <div class="row">
                        <div class="col">
                            <input type="text" id="name" name="visitor_name" placeholder="Name" pattern=[A-Z\sa-z]{3,20} required/>
@@ -115,7 +115,7 @@
                    </div>
                    <div class="row">
                        <div class="col">
-                           <button class="btn btn-default" type="submit">Send Message</button>
+                           <button class="btn btn-default" type="submit" onclick="onSubmitForm(this)">Send Message</button>
                        </div>
                    </div>
                </form>
