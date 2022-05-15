@@ -57,3 +57,10 @@
         });
 */
 
+    function onSubmitForm(event){
+        document.getElementById("contactForm").submit();
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('title').value = '';
+        document.getElementById('message').value = '';
+    }
