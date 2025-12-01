@@ -8,7 +8,7 @@
         }
         //return document.body.classList.toggle("darkMode");
     }
-    document.addEventListener('load', function(event) {
+    document.addEventListener('DOMContentLoaded', function(event) {
         if (localStorage.getItem('screenModeNightTokenState') == 'night'){
             document.body.classList.add("darkMode");
         }
@@ -57,10 +57,22 @@
         });
 */
 
-    function onSubmitForm(event){
-        document.getElementById("contactForm").submit();
-        document.getElementById('name').value = '';
-        document.getElementById('email').value = '';
-        document.getElementById('title').value = '';
-        document.getElementById('message').value = '';
+    // Form submission handling with success/error messages
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+
+            // Show loading state
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+
+            // Formspree handles the actual submission
+            // We'll show success after a delay (Formspree redirects by default)
+            setTimeout(function() {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
     }

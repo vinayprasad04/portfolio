@@ -48,7 +48,7 @@ if($_POST) {
         $recipient = "tech.support@domain.com";
     }
     else {
-        $recipient = "vinayprasad04@gmail.com";
+        $recipient = "vinay.qss@gmail.com";
     }
 
     $email_body .= "</div>";
