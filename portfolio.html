@@ -48,109 +48,243 @@
             </ul>
         </nav>
     </header>
-    <div class="homePage">
+    <div class="homePage portfolio-page">
        <section class="about portfolio">
-           <h1>Portfolio</h1>
-           <div class="rowPanel">
-            
-             <div class="artist-card">
-                   <a href="http://incomegrow.in" target="_blank">
-                       <img class="artist-card__img" src="./assets/img/portfolio/incomeGrow.jpg" alt="incomeGrow"/>
-                   </a>
-               </div>
-                <div class="artist-card">
-                   <a href="http://stock.incomegrow.in/" target="_blank">
-                       <img class="artist-card__img" src="./assets/img/portfolio/stock.jpg" alt="stock Platform"/>
-                   </a>
-               </div>
-               <div class="artist-card">
-                   <a href="https://emiratihub.com" target="_blank">
-                       <img class="artist-card__img" src="./assets/img/portfolio/3.jpg" alt="Web Application Portfolio"/>
-                   </a>
-               </div>
-               
-                 <div class="artist-card">
-                   <a href="https://apps.brightquery.com" target="_blank">
-                       <img class="artist-card__img" src="./assets/img/portfolio/brightquery.jpg" alt="brightquery"/>
+           <h1 class="scroll-reveal">My Portfolio</h1>
+           <p class="portfolio-intro scroll-reveal">A showcase of my recent web development projects demonstrating expertise in React.js, responsive design, and modern web technologies</p>
+
+           <div class="portfolio-filters scroll-reveal">
+               <button class="filter-btn active" data-filter="all">All Projects</button>
+               <button class="filter-btn" data-filter="react">React Apps</button>
+               <button class="filter-btn" data-filter="website">Websites</button>
+               <button class="filter-btn" data-filter="wordpress">Wordpress</button>
+           </div>
+
+           <div class="rowPanel portfolio-grid">
+
+             <div class="portfolio-item scroll-reveal" data-category="website react">
+                   <a href="http://incomegrow.in" target="_blank" class="portfolio-link">
+                       <div class="portfolio-image">
+                           <img src="./assets/img/portfolio/incomeGrow.jpg" alt="Income Grow Platform"/>
+                           <div class="portfolio-overlay">
+                               <div class="portfolio-info">
+                                   <h3>Income Grow</h3>
+                                   <p>Financial Growth Platform</p>
+                                   <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                               </div>
+                           </div>
+                       </div>
                    </a>
                </div>
 
-                <div class="artist-card">
-                   <a href="https://eldermark.com/" target="_blank">
-                       <img class="artist-card__img" src="./assets/img/portfolio/7.jpg" alt="Web Application Portfolio"/>
+                <div class="portfolio-item scroll-reveal" data-category="react website">
+                   <a href="http://stock.incomegrow.in/" target="_blank" class="portfolio-link">
+                       <div class="portfolio-image">
+                           <img src="./assets/img/portfolio/stock.jpg" alt="Stock Trading Platform"/>
+                           <div class="portfolio-overlay">
+                               <div class="portfolio-info">
+                                   <h3>Stock Platform</h3>
+                                   <p>React-based Trading App</p>
+                                   <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                               </div>
+                           </div>
+                       </div>
                    </a>
                </div>
 
-               <div class="artist-card">
-                   <a href="http://150.230.242.42" target="_blank">
-                       <img class="artist-card__img" src="./assets/img/portfolio/2.jpg" alt="Web Application Portfolio"/>
-                   </a>
-               </div>
-              
-                <div class="artist-card">
-                   <a href="https://sanaaljazira.com/" target="_blank">
-                       <img class="artist-card__img" src="./assets/img/portfolio/14.jpg" alt="Web Application Portfolio"/>
-                   </a>
-               </div>
-
-               <div class="artist-card">
-                   <a href="https://knowyourvitiligo.com/" target="_blank">
-                       <img class="artist-card__img" src="./assets/img/portfolio/vitilogo.jpg" alt="Web Application Portfolio"/>
+               <div class="portfolio-item scroll-reveal" data-category="website angular">
+                   <a href="https://emiratihub.com" target="_blank" class="portfolio-link">
+                       <div class="portfolio-image">
+                           <img src="./assets/img/portfolio/3.jpg" alt="Emirati Hub"/>
+                           <div class="portfolio-overlay">
+                               <div class="portfolio-info">
+                                   <h3>Emirati Hub</h3>
+                                   <p>Business Directory Portal</p>
+                                   <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                               </div>
+                           </div>
+                       </div>
                    </a>
                </div>
 
-                <div class="artist-card">
-                   <a href="https://promedica.co.in/" target="_blank">
-                       <img class="artist-card__img" src="./assets/img/portfolio/promedica.jpg" alt="Web Application Portfolio"/>
+                 <div class="portfolio-item scroll-reveal" data-category="react website">
+                   <a href="https://apps.brightquery.com" target="_blank" class="portfolio-link">
+                       <div class="portfolio-image">
+                           <img src="./assets/img/portfolio/brightquery.jpg" alt="BrightQuery App"/>
+                           <div class="portfolio-overlay">
+                               <div class="portfolio-info">
+                                   <h3>BrightQuery</h3>
+                                   <p>Analytics Dashboard</p>
+                                   <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                               </div>
+                           </div>
+                       </div>
                    </a>
                </div>
 
-              <div class="artist-card">
-                   <a href="https://codence.com" target="_blank">
-                       <img class="artist-card__img" src="./assets/img/portfolio/codence.jpg" alt="Web Application Portfolio"/>
+                <div class="portfolio-item scroll-reveal" data-category="website react">
+                   <a href="https://eldermark.com/" target="_blank" class="portfolio-link">
+                       <div class="portfolio-image">
+                           <img src="./assets/img/portfolio/7.jpg" alt="Eldermark"/>
+                           <div class="portfolio-overlay">
+                               <div class="portfolio-info">
+                                   <h3>Eldermark</h3>
+                                   <p>Senior Living Platform</p>
+                                   <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                               </div>
+                           </div>
+                       </div>
                    </a>
                </div>
-                <div class="artist-card">
-                   <a href="https://www.doctor-shannon.com" target="_blank">
-                       <img class="artist-card__img" src="./assets/img/portfolio/shannon.jpg" alt="Web Application Portfolio"/>
+
+               <div class="portfolio-item scroll-reveal" data-category=" website">
+                   <a href="http://150.230.242.42" target="_blank" class="portfolio-link">
+                       <div class="portfolio-image">
+                           <img src="./assets/img/portfolio/2.jpg" alt="Web Application"/>
+                           <div class="portfolio-overlay">
+                               <div class="portfolio-info">
+                                   <h3>Enterprise Portal</h3>
+                                   <p>Business Management App</p>
+                                   <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                               </div>
+                           </div>
+                       </div>
+                   </a>
+               </div>
+
+                <div class="portfolio-item scroll-reveal" data-category="website wordpress">
+                   <a href="https://sanaaljazira.com/" target="_blank" class="portfolio-link">
+                       <div class="portfolio-image">
+                           <img src="./assets/img/portfolio/14.jpg" alt="Sana Al Jazira"/>
+                           <div class="portfolio-overlay">
+                               <div class="portfolio-info">
+                                   <h3>Sana Al Jazira</h3>
+                                   <p>Corporate Website</p>
+                                   <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                               </div>
+                           </div>
+                       </div>
+                   </a>
+               </div>
+
+               <div class="portfolio-item scroll-reveal" data-category="website wordpress">
+                   <a href="https://knowyourvitiligo.com/" target="_blank" class="portfolio-link">
+                       <div class="portfolio-image">
+                           <img src="./assets/img/portfolio/vitilogo.jpg" alt="Know Your Vitiligo"/>
+                           <div class="portfolio-overlay">
+                               <div class="portfolio-info">
+                                   <h3>Know Your Vitiligo</h3>
+                                   <p>Healthcare Information Portal</p>
+                                   <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                               </div>
+                           </div>
+                       </div>
+                   </a>
+               </div>
+
+                <div class="portfolio-item scroll-reveal" data-category="website wordpress">
+                   <a href="https://promedica.co.in/" target="_blank" class="portfolio-link">
+                       <div class="portfolio-image">
+                           <img src="./assets/img/portfolio/promedica.jpg" alt="Promedica"/>
+                           <div class="portfolio-overlay">
+                               <div class="portfolio-info">
+                                   <h3>Promedica</h3>
+                                   <p>Medical Services Website</p>
+                                   <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                               </div>
+                           </div>
+                       </div>
+                   </a>
+               </div>
+
+              <div class="portfolio-item scroll-reveal" data-category="website wordpress">
+                   <a href="https://codence.com" target="_blank" class="portfolio-link">
+                       <div class="portfolio-image">
+                           <img src="./assets/img/portfolio/codence.jpg" alt="Codence"/>
+                           <div class="portfolio-overlay">
+                               <div class="portfolio-info">
+                                   <h3>Codence</h3>
+                                   <p>Technology Solutions Website</p>
+                                   <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                               </div>
+                           </div>
+                       </div>
+                   </a>
+               </div>
+
+                <div class="portfolio-item scroll-reveal" data-category="website wordpress">
+                   <a href="https://www.doctor-shannon.com" target="_blank" class="portfolio-link">
+                       <div class="portfolio-image">
+                           <img src="./assets/img/portfolio/shannon.jpg" alt="Dr. Shannon"/>
+                           <div class="portfolio-overlay">
+                               <div class="portfolio-info">
+                                   <h3>Dr. Shannon</h3>
+                                   <p>Medical Professional Website</p>
+                                   <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                               </div>
+                           </div>
+                       </div>
                    </a>
                </div>
 
 
-               <!-- <div class="artist-card">
-                   <a href="https://www.qsstechnosoft.com/" target="_blank">
-                       <img class="artist-card__img" src="./assets/img/portfolio/10.jpg" alt="Web Application Portfolio"/>
+               <div class="portfolio-item scroll-reveal" data-category="website">
+                   <a href="https://vinayprasad04.github.io/buzzingbee/" target="_blank" class="portfolio-link">
+                       <div class="portfolio-image">
+                           <img src="./assets/img/portfolio/15.jpg" alt="Buzzing Bee"/>
+                           <div class="portfolio-overlay">
+                               <div class="portfolio-info">
+                                   <h3>Buzzing Bee</h3>
+                                   <p>Creative Agency Website</p>
+                                   <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                               </div>
+                           </div>
+                       </div>
                    </a>
-               </div> -->
-               <!-- <div class="artist-card">
-                       <img class="artist-card__img" src="./assets/img/portfolio/11.jpg" alt="Web Application Portfolio"/>
+               </div>
 
-               </div> -->
-              
-               <!-- <div class="artist-card">
-                   <a href="http://www.doorbeen.org" target="_blank">
-                       <img class="artist-card__img" src="./assets/img/portfolio/13.jpg" alt="Web Application Portfolio"/>
-                   </a>
-               </div> -->
-              
-               <div class="artist-card">
-                   <a href="https://vinayprasad04.github.io/buzzingbee/" target="_blank">
-                       <img class="artist-card__img" src="./assets/img/portfolio/15.jpg" alt="Web Application Portfolio"/>
-                   </a>
-               </div>
-               <div class="artist-card">
-                   <a href="https://vinayprasad04.github.io/SaraBeautySalon/" target="_blank">
-                       <img class="artist-card__img" src="./assets/img/portfolio/16.jpg" alt="Sara Beauty Salon Responsive Website"/>
+               <div class="portfolio-item scroll-reveal" data-category="website">
+                   <a href="https://vinayprasad04.github.io/SaraBeautySalon/" target="_blank" class="portfolio-link">
+                       <div class="portfolio-image">
+                           <img src="./assets/img/portfolio/16.jpg" alt="Sara Beauty Salon"/>
+                           <div class="portfolio-overlay">
+                               <div class="portfolio-info">
+                                   <h3>Sara Beauty Salon</h3>
+                                   <p>Responsive Salon Website</p>
+                                   <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                               </div>
+                           </div>
+                       </div>
                    </a>
                </div>
-               <div class="artist-card">
-                   <a href="https://vinayprasad04.github.io/shop/#" target="_blank">
-                       <img class="artist-card__img" src="./assets/img/portfolio/17.jpg" alt="E-commerce Shopping Website"/>
+
+               <div class="portfolio-item scroll-reveal" data-category=" website">
+                   <a href="https://vinayprasad04.github.io/shop/#" target="_blank" class="portfolio-link">
+                       <div class="portfolio-image">
+                           <img src="./assets/img/portfolio/17.jpg" alt="E-commerce Shop"/>
+                           <div class="portfolio-overlay">
+                               <div class="portfolio-info">
+                                   <h3>Shopping Store</h3>
+                                   <p>E-Commerce Website</p>
+                                   <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                               </div>
+                           </div>
+                       </div>
                    </a>
                </div>
-                <div class="artist-card">
-                   <a href="https://vinayprasad04.github.io/gmail-clone/" target="_blank">
-                       <img class="artist-card__img" src="./assets/img/portfolio/12.jpg" alt="Gmail Clone React Application"/>
+
+                <div class="portfolio-item scroll-reveal" data-category="website">
+                   <a href="https://vinayprasad04.github.io/gmail-clone/" target="_blank" class="portfolio-link">
+                       <div class="portfolio-image">
+                           <img src="./assets/img/portfolio/12.jpg" alt="Gmail Clone"/>
+                           <div class="portfolio-overlay">
+                               <div class="portfolio-info">
+                                   <h3>Gmail Clone</h3>
+                                   <p>React Application</p>
+                                   <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                               </div>
+                           </div>
+                       </div>
                    </a>
                </div>
                 <!-- <div class="artist-card">
@@ -185,18 +319,7 @@
        </section>
     </div>
     <div class="setting">
-        <div class="theme icons" onclick="onSettingClick(this)"><i class="fa fa-cog"></i></div>
         <div class="dayNightMode icons" onclick="onDayNightModeClick()"><i class="fa fa-moon"></i><i class="fa-solid fa-sun"></i></div>
-        <div class="themePopup">
-            <h3>Theme Colors</h3>
-            <div class="color">
-                <span class="color-1" onclick="setColorTheme('color-1')"></span>
-                <span class="color-2" onclick="setColorTheme('color-2')"></span>
-                <span class="color-3" onclick="setColorTheme('color-3')"></span>
-                <span class="color-4" onclick="setColorTheme('color-4')"></span>
-                <span class="color-5" onclick="setColorTheme('color-5')"></span>
-            </div>
-        </div>
     </div>
 
 </body>

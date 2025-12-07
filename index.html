@@ -51,38 +51,68 @@
         </nav>
     </header>
     <div class="homePage">
+        <canvas id="particles-canvas"></canvas>
         <section class="intro">
             <div class="leftSide">
-                <h1>Hello, my name is <em>Vinay</em></h1>
-                <h2><span>I'm a </span><em> Front End Development</em></h2>
-                <p>I'm a  Front End Development with extensive experience for over 9 years. My expertise is to make website with help of
-                    React.Js, Javascript, HTML5, & SCSS...
-                </p>
-                <button class="btn btn-default" onclick="location.href='about.html'">More About Me</button>
-                <!--<a href="./assets/img/Vinay CV.pdf" style="margin-left: 10px" class="btn btn-default" download="vinay_cv.pdf">Download CV</a>-->
+                <h1 class="fade-in-up">Hi there, I'm <em>Vinay Prasad</em></h1>
+                <h2 class="fade-in-up delay-1"><span>I'm a </span><em class="typing-text"></em><span class="cursor">|</span></h2>
+                <p class="fade-in-up delay-2">Technical Team Lead & Senior Front-End Developer with 11+ years of experience leading teams and building exceptional digital experiences. Expert in React.js, JavaScript, and modern web technologies, I guide teams to transform complex problems into elegant, scalable solutions.</p>
+                <div class="stats-container fade-in-up delay-3">
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-target="11">0</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-target="50">0</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-target="30">0</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+                <div class="cta-buttons fade-in-up delay-4">
+                    <button class="btn btn-default btn-primary" onclick="location.href='about.html'">
+                        <span>Explore My Work</span>
+                        <i class="fa fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-default btn-secondary" onclick="location.href='contact.html'">
+                        <span>Let's Connect</span>
+                        <i class="fa fa-envelope"></i>
+                    </button>
+                </div>
+                <div class="tech-stack fade-in-up delay-5">
+                    <p class="tech-label">Tech Stack:</p>
+                    <div class="tech-icons">
+                        <div class="tech-icon" title="React.js"><i class="fab fa-react"></i></div>
+                        <div class="tech-icon" title="JavaScript"><i class="fab fa-js"></i></div>
+                        <div class="tech-icon" title="HTML5"><i class="fab fa-html5"></i></div>
+                        <div class="tech-icon" title="CSS3"><i class="fab fa-css3-alt"></i></div>
+                        <div class="tech-icon" title="Sass"><i class="fab fa-sass"></i></div>
+                        <div class="tech-icon" title="Node.js"><i class="fab fa-node"></i></div>
+                    </div>
+                </div>
             </div>
             <div class="rightSide">
                 <div class="imgWrap">
                     <div class="lShape"></div>
                     <div class="lShape second"></div>
-                    <img src="./assets/img/photo.png" alt="photo"/>
+                    <div class="floating-badge badge-1">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <img src="./assets/img/photo.png" alt="Vinay Prasad - Front End Developer" class="profile-image"/>
                 </div>
             </div>
         </section>
     </div>
     <div class="setting">
-        <div class="theme icons" onclick="onSettingClick(this)"><i class="fa fa-cog"></i></div>
         <div class="dayNightMode icons" onclick="onDayNightModeClick()"><i class="fa fa-moon"></i><i class="fa-solid fa-sun"></i></div>
-        <div class="themePopup">
-            <h3>Theme Colors</h3>
-            <div class="color">
-                <span class="color-1" onclick="setColorTheme('color-1')"></span>
-                <span class="color-2" onclick="setColorTheme('color-2')"></span>
-                <span class="color-3" onclick="setColorTheme('color-3')"></span>
-                <span class="color-4" onclick="setColorTheme('color-4')"></span>
-                <span class="color-5" onclick="setColorTheme('color-5')"></span>
-            </div>
-        </div>
     </div>
 
     <script src="./assets/js/script.js"></script>
