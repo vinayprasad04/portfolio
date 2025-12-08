@@ -364,6 +364,7 @@ header nav ul li.active a, header nav ul li.active .fa, header nav ul li:hover a
   left: 300px;
   position: relative;
   padding: 40px;
+  padding-bottom: 60px;
   min-height: 100vh;
 }
 
@@ -375,6 +376,7 @@ header nav ul li.active a, header nav ul li.active .fa, header nav ul li:hover a
 .homePage.about-page {
   height: auto;
   overflow-y: auto;
+  padding-bottom: 60px;
 }
 .homePage #particles-canvas {
   position: absolute;
@@ -561,6 +563,7 @@ body.darkMode .cta-buttons .btn-secondary i {
 /* Tech Stack */
 .tech-stack {
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 .tech-stack .tech-label {
   font-size: 0.9rem;
@@ -720,6 +723,115 @@ body.darkMode .floating-badge {
   top: 50%;
   right: -30px;
   animation: float 3.5s ease-in-out infinite;
+}
+.floating-badge.badge-4 {
+  top: 10%;
+  left: -20px;
+  animation: floatReverse 3.2s ease-in-out infinite;
+}
+.floating-badge.badge-5 {
+  bottom: -10px;
+  right: 100px;
+  animation: float 3.8s ease-in-out infinite;
+}
+.floating-badge.badge-6 {
+  bottom: 150px;
+  left: -20px;
+  animation: floatReverse 3.3s ease-in-out infinite;
+}
+
+/* Glow effect */
+.glow-effect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, var(--secondary) 0%, transparent 70%);
+  opacity: 0.15;
+  border-radius: 50%;
+  animation: pulse 4s ease-in-out infinite;
+  z-index: 0;
+}
+
+/* Orbit ring */
+.orbit-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  height: 110%;
+  border: 2px dashed var(--secondary);
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: rotate 20s linear infinite;
+  z-index: 0;
+}
+
+/* Experience badge */
+.experience-badge {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, var(--secondary), #ff6b6b);
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(255, 64, 56, 0.3);
+  z-index: 3;
+  text-align: center;
+  animation: shimmer 3s ease-in-out infinite;
+}
+body.darkMode .experience-badge {
+  background: linear-gradient(135deg, var(--secondary), #ff6b6b);
+}
+.experience-badge .badge-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+}
+.experience-badge .badge-text {
+  display: block;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  color: #fff;
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.15;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.25;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes shimmer {
+  0%, 100% {
+    box-shadow: 0 10px 30px rgba(255, 64, 56, 0.3);
+  }
+  50% {
+    box-shadow: 0 15px 40px rgba(255, 64, 56, 0.5);
+  }
 }
 
 .setting {
@@ -1217,6 +1329,7 @@ body.darkMode .about .experience ul li i {
   height: auto;
   min-height: 100vh;
   overflow-y: auto;
+  padding-bottom: 60px;
 }
 
 .servicesPage .services-intro {
@@ -1408,6 +1521,7 @@ body.darkMode .about.servicesPage .service-features li {
   height: auto;
   min-height: 100vh;
   overflow-y: auto;
+  padding-bottom: 60px;
 }
 
 .portfolio .portfolio-intro {
@@ -1665,6 +1779,7 @@ body.darkMode .portfolio-image {
   height: auto;
   min-height: 100vh;
   overflow-y: auto;
+  padding-bottom: 60px;
 }
 
 .contactPage .contact-intro {
@@ -2002,30 +2117,57 @@ body.darkMode .modern-form textarea {
 @media (max-width: 991px) {
   .menuMobile {
     display: block;
-    position: absolute;
-    left: 24px;
-    top: 17px;
-    z-index: 99;
-    background: transparent;
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    z-index: 101;
+    background: var(--secondary);
     border: none;
     cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  .menuMobile:hover {
+    background: #1e2c37;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
   }
   .menuMobile i {
-    font-size: 1.875rem;
+    font-size: 1.5rem;
+    color: #fff;
   }
   .menuMobile i.fa-xmark {
     display: none;
+  }
+  body.darkMode .menuMobile {
+    background: var(--secondary);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  }
+  body.darkMode .menuMobile:hover {
+    background: #1e2c37;
+  }
+  body.darkMode .menuMobile i {
+    color: #fff;
   }
 
   header {
     left: -320px;
     transition: 500ms;
+    background: #fff;
+    z-index: 100;
+  }
+  body.darkMode header {
+    background: #222222;
   }
 
   .homePage {
     left: 0;
     width: 100%;
     padding: 20px;
+    padding-top: 70px;
+    padding-bottom: 50px;
   }
 
   .leftMenuOpen .menuMobile i.fa-bars {
@@ -2087,6 +2229,7 @@ body.darkMode .modern-form textarea {
 
   .tech-stack {
     margin-top: 30px;
+    margin-bottom: 30px;
   }
   .tech-stack .tech-icon {
     width: 45px;
@@ -2100,10 +2243,52 @@ body.darkMode .modern-form textarea {
     display: none;
   }
 
+  /* Show simplified rightSide on tablet landscape */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .homePage .intro {
+      flex-direction: column;
+      gap: 40px;
+    }
+    .homePage .intro .rightSide {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .homePage .intro .rightSide .imgWrap {
+      width: 350px;
+      height: 350px;
+    }
+    .floating-badge {
+      width: 50px;
+      height: 50px;
+    }
+    .floating-badge i {
+      font-size: 1.5rem;
+    }
+    .experience-badge {
+      padding: 12px 20px;
+    }
+    .experience-badge .badge-number {
+      font-size: 1.5rem;
+    }
+    .experience-badge .badge-text {
+      font-size: 0.8rem;
+    }
+  }
+
+  .about-page,
+  .services-page,
+  .portfolio-page,
+  .contactPage {
+    padding-top: 70px;
+  }
+
   .about h1 {
     font-size: 2rem;
     margin-bottom: 25px;
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .intro-card {
@@ -2208,6 +2393,60 @@ body.darkMode .modern-form textarea {
   }
 }
 @media (max-width: 767px) {
+  .homePage {
+    padding: 15px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+
+  .homePage .intro .leftSide h1 {
+    font-size: 1.5rem;
+  }
+  .homePage .intro .leftSide h1 em {
+    font-size: 1.8rem;
+  }
+  .homePage .intro .leftSide h2 {
+    font-size: 1.1rem;
+  }
+  .homePage .intro .leftSide h2 .typing-text {
+    font-size: 1.1rem;
+  }
+  .homePage .intro .leftSide p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0;
+  }
+  .stat-item {
+    padding: 15px;
+  }
+  .stat-item .stat-number {
+    font-size: 1.75rem;
+  }
+
+  .tech-stack .tech-icons {
+    gap: 12px;
+  }
+  .tech-stack .tech-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .tech-stack .tech-icon i {
+    font-size: 1.3rem;
+  }
+  .tech-label {
+    font-size: 0.9rem;
+  }
+
+  .cta-buttons .btn {
+    padding: 12px 25px;
+    font-size: 0.95rem;
+  }
+
   .about.servicesPage .rowPanel {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -2235,6 +2474,77 @@ body.darkMode .modern-form textarea {
   }
 }
 @media (max-width: 480px) {
+  .homePage {
+    padding: 10px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+
+  .homePage .intro .leftSide h1 {
+    font-size: 1.3rem;
+  }
+  .homePage .intro .leftSide h1 em {
+    font-size: 1.6rem;
+    display: block;
+    margin-top: 5px;
+  }
+  .homePage .intro .leftSide h2 {
+    font-size: 1rem;
+    margin: 15px 0;
+  }
+  .homePage .intro .leftSide h2 .typing-text {
+    font-size: 1rem;
+  }
+  .homePage .intro .leftSide p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .stats-container {
+    gap: 12px;
+    padding: 12px 0;
+  }
+  .stat-item {
+    padding: 12px;
+  }
+  .stat-item .stat-number {
+    font-size: 1.5rem;
+  }
+  .stat-item p {
+    font-size: 0.7rem;
+  }
+
+  .tech-stack {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .tech-stack .tech-icons {
+    gap: 10px;
+    justify-content: center;
+  }
+  .tech-stack .tech-icon {
+    width: 35px;
+    height: 35px;
+  }
+  .tech-stack .tech-icon i {
+    font-size: 1.2rem;
+  }
+  .tech-label {
+    font-size: 0.85rem;
+  }
+
+  .cta-buttons {
+    gap: 12px;
+    margin-top: 20px;
+  }
+  .cta-buttons .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  .cta-buttons .btn i {
+    font-size: 0.85rem;
+  }
+
   .about.portfolio .rowPanel.portfolio-grid {
     grid-template-columns: 1fr;
     gap: 20px;
